@@ -10,7 +10,7 @@ export default function Dock() {
   useGSAP(() => {
     const dock = dockRef.current;
     if (!dock) return;
-    const icons = document.querySelectorAll(".dock-icon");
+    const icons = dock.querySelectorAll(".dock-icon");
     const animateIcons = (mouseX: number) => {
       const { left } = dock.getBoundingClientRect();
 
